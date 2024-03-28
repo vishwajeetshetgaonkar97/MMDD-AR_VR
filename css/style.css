@@ -1,0 +1,143 @@
+    /* Fonts  */
+
+    /* poppin font import  */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+      @font-face {
+        font-family:Kalesi-rounded;
+        src: url('../Assets//Fonts/KalesiRounded-Regular-BF65fbfefb8dacb.otf');
+      }
+      
+
+    /* Default *---------------- */
+
+    html{
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        background-color: #131313;
+        overflow-x: hidden;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .hero-section {
+        background-image: url(../Assets/Images/poster-image.png);
+        width: 100vw;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+       
+    }
+
+    .hero-section-Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+        background-color: #000000a5;
+        backdrop-filter: blur(7px);
+    }
+
+    .hero-section-heading{
+        font-size: 12vh;
+        text-align: center;
+        font-family:Kalesi-rounded;
+        background-color: #0000001b;
+        padding: 0 15.7vw;
+    }
+
+    .hero-section-subheading{
+        font-size: 3vh;
+        padding: 0 17.2vw;
+        padding-bottom: 2vh;
+        background-color: #0000001b;
+    }
+
+    .content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6vh 4vw;
+    justify-content: center;
+    }
+
+    .cards{
+        padding: 2vh 1vw;
+        border-radius: 2vh;
+        background-color: #272727;
+        backdrop-filter: blur(7px);
+        margin: 4vh 1vw;
+
+    }
+
+    .Hotspot{
+        cursor: pointer;
+        padding: 0.8vh 1.5vw;
+        backdrop-filter: blur(8px);
+        background: #ffffffb0;
+        border: none;
+    }
+
+    .Hotspot:hover {
+        transform: scale(1.05);
+    }
+
+    model-viewer {
+        height: 50vh;
+        width: calc(50vh * (16/9));
+        background-color: aliceblue;
+    }
+
+    .card-heading, .card-subheading{
+        padding-left: 1vh;
+    }
+
+    .card-heading{
+        font-family:Kalesi-rounded;
+        font-size:  3.6vh;
+        padding-top: 1vh;
+    }
+
+    .card-subheading{
+        font-size: 2vh;
+        font-style: italic;
+        opacity: 0.8;
+    }
+
+
+    @media  only screen and (max-width: 768px) {
+        .hero-section-heading{
+            font-size: 7.5vh;
+            padding: 0 4vw;
+            padding-top: 2vh;
+        }
+    
+        .hero-section-subheading{
+            font-size: 2vh;
+            text-align: center;
+            padding: 0 15.7vw;
+            padding-bottom: 3vh;
+            padding-top: 1vh;
+        }
+
+        .content-wrapper{
+            padding: 2vh 0vw;
+            justify-content: center;
+        }
+
+        .cards{
+            padding: 0 1vw 1vh 0;
+            margin: 2vh 0vw;
+    
+        }
+
+        model-viewer {
+            height: 25vh;
+            width: calc(25vh * (16/9));
+            background-color: aliceblue;
+        }
+    }

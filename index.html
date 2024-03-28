@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Model Viewer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Model Viewer Site">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+
+    <body>
+           <div class="hero-section">
+                <div class="hero-section-Content"> 
+                    <div class="hero-section-heading">Welcome Aboard</div>
+                    <div class="hero-section-subheading">Best place to find and view 3D model furniture's</div>
+                </div>
+           </div>
+           <div class="content-wrapper">
+                <div class="cards">
+                    <model-viewer src="./Assets/models/Avona.glb" 
+                    ar  
+                    ar-placement="wall" 
+                    camera-controls  
+                    poster="./Assets/Images/Avona.png"
+                    shadow-intensity="1">
+                        <button id="card-1-b1" class="Hotspot" slot="hotspot-1" data-position="-0.6402411515008968m 0.921372568634725m 0.6967661869539745m" data-normal="-0.007741024145129051m 0.5871389268669076m 0.8094491689431528m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">strength</div>
+                        </button>
+                        <button id="card-1-b2" class="Hotspot" slot="hotspot-2" data-position="0.15092775683047432m 0.5033955846422564m 0.4882788774254663m" data-normal="0.3193417420089168m 0.9472695173871337m 0.02648231938213442m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Comfort</div>
+                        </button>
+                    </model-viewer>
+                    <div class="card-heading">Avona Chair</div>
+                    <div class="card-subheading" id="subCardInfo-1">click on the parts to know more</div>
+                </div>
+
+                <div class="cards">
+                    <model-viewer src="./Assets/models/JRMY.glb" 
+                    ar 
+                    poster="./Assets/Images/Jrmy.png"
+                    camera-controls  
+                    shadow-intensity="1">
+                        <button id="card-2-b1"class="Hotspot" slot="hotspot-1" data-position="0.2302216655205278m 0.577551355950426m 0.7032589655024197m" data-normal="0.9942498194453893m 0.0835095023690138m 0.06703327193931871m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Tray</div>
+                        </button>
+                        <button id="card-2-b2" class="Hotspot" slot="hotspot-3" data-position="0.31331547024530204m 0.04341799442088375m 0.40818440513663257m" data-normal="0.9864794050487422m 0.010836850683136312m 0.16352659136039985m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Frame</div>
+                        </button>
+                        <button id="card-2-b3"class="Hotspot" slot="hotspot-4" data-position="0.22526758465481667m 0.4245601530503045m -0.2043552738069353m" data-normal="0.004997201281457878m 0.9992537974927089m -0.03829981952637705m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Support</div>
+                        </button>
+                    </model-viewer>
+                    <div class="card-heading">JRMY Chair</div>
+                    <div id="subCardInfo-2" class="card-subheading">click on the parts to know more</div>
+                </div>
+
+                <div class="cards">
+                    <model-viewer src="./Assets/models/Oba.glb" 
+                    ar 
+                    poster="./Assets/Images/Oba.png"
+                    camera-controls 
+                    shadow-intensity="1">
+                        <button id="card-3-b1" class="Hotspot" slot="hotspot-1" data-position="-0.2677068550680537m 0.030381413063848228m 0.38505583496442763m" data-normal="-0.5376573452220433m -0.06719333695682209m 0.8404817871895808m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Base</div>
+                        </button>
+                        <button id="card-3-b2"class="Hotspot" slot="hotspot-2" data-position="0.04579460936399061m 0.5370915715914621m 0.014493911808636281m" data-normal="0.0207034384903873m 0.9997652582464229m 0.006387177634800689m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Comfort</div>
+                        </button>
+                        <button id="card-3-b3"class="Hotspot" slot="hotspot-4" data-position="0.22216097914796712m 1.2244483744692043m -0.2686322009191651m" data-normal="-0.48078616813730995m 0.35321970916646056m 0.8025462588438148m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Stability</div>
+                        </button>
+                    </model-viewer>
+                    
+                    <div class="card-heading">Oba Chair</div>
+                    <div id="subCardInfo-3" class="card-subheading">click on the parts to know more</div>
+                </div>
+
+                <div class="cards">
+                  <model-viewer src="./Assets/models/Onsilla.glb" 
+                  ar 
+                  camera-controls 
+                  poster="./Assets/Images/Onsilla.png"
+                  shadow-intensity="1">
+                    <button id="card-4-b1" class="Hotspot" slot="hotspot-1" data-position="0.21797928449943388m 0.6015300293260314m -0.03635751702026646m" data-normal="-0.8581619894545574m 0.28254502195461106m 0.42863307201389m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Comfort</div>
+                    </button>
+                    <button id="card-4-b2"class="Hotspot" slot="hotspot-2" data-position="-0.06961726133418616m 0.0300366422185252m 0.031284909189126936m" data-normal="-0.05667074761795919m 0.9983545667439098m 0.008751309959193179m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Stand</div>
+                    </button>
+                    <button id="card-4-b3" class="Hotspot" slot="hotspot-3" data-position="0.2583336566802048m 1.0926953883954054m -0.058955272197118685m" data-normal="-0.6172170055903814m -0.7013636222433111m 0.3565560789045466m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Craft</div>
+                    </button>
+                </model-viewer>
+                    <div class="card-heading">Onsilla Chair</div>
+                    <div id="subCardInfo-4" class="card-subheading">click on the parts to know more</div>
+                </div>
+           </div>
+               
+    </body>
+    <script src="./js/script.js"></script>
+</html>
